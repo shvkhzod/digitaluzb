@@ -1,0 +1,2 @@
+# Brending
+Brending haqida gaplashamiz

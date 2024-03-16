@@ -1,0 +1,3 @@
+Kompyuter Haqida
+Kompyuterning Ichki Qurilmalari
+Operatsion Tizimlar
