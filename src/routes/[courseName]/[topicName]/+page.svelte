@@ -116,7 +116,7 @@
     }
 
     p {
-        color: #a1a1a1;
+        color: var(--text-color-secondary);
         opacity: 1;
         font-size: 16px;
         font-weight: 400;
@@ -194,7 +194,7 @@
     
 
     .topicSummary {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 180px;
         min-height: 100vh;
@@ -206,7 +206,6 @@
         color: var(--primary-color);
         font-size: 16px;
         font-weight: 600;
-        margin-bottom: -16px;
     
     }
 

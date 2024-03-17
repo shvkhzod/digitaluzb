@@ -14,6 +14,23 @@
          }}/>
       </div>
        <div class='mobileNavs'>
+        {#if $initialMode == 'dark'}
+        <button class="toggleButton" on:click={()=> {
+          toggleMode('light')
+        
+        }}>
+          <img src="/images/moon.svg" alt="sun"/>
+        </button>
+        {/if}
+  
+        {#if $initialMode == 'light'}
+          <button class="toggleButton"  on:click={()=> {
+            toggleMode('dark')
+          
+          }}>
+            <img src="/images/sun.svg" alt="sun"/>
+          </button>
+        {/if}
          <a href="/darslar">
           <p>Darslar</p>
         </a>
@@ -55,13 +72,19 @@
     {#if screenWidth !== undefined && screenWidth > 768}
       <div class='navItems'>
       {#if $initialMode == 'dark'}
-      <button class="toggleButton">
+      <button class="toggleButton" on:click={()=> {
+        toggleMode('light')
+      
+      }}>
         <img src="/images/moon.svg" alt="sun"/>
       </button>
       {/if}
 
       {#if $initialMode == 'light'}
-        <button class="toggleButton">
+        <button class="toggleButton"  on:click={()=> {
+          toggleMode('dark')
+        
+        }}>
           <img src="/images/sun.svg" alt="sun"/>
         </button>
       {/if}
@@ -82,24 +105,35 @@
 
 <script lang='ts'>
 	import { onMount } from "svelte";
-  import "../app.css"
+  import "../app.pcss"
 	import type { CourseType } from "../data/courseTypes";
 	import { courses } from "../data/courses";
 	import { page } from "$app/stores";
 	import { writable } from "svelte/store";
+  
   let screenWidth: number;
 
   const mobileNavOpen = writable(false);
-  const initialMode = writable(document.body.getAttribute('mode'))
+  const initialMode = writable('light')
 
   let course: CourseType | undefined;
 
-  function toggleMode(mode:string) {
+  function toggleMode(mode:string){
         document.body.setAttribute('mode', mode);
+        console.log(mode)
+        localStorage.setItem('mode', mode);
+        initialMode.set(mode) // Save mode to local storage
     }
   onMount(()=> {
       let slug = $page.params.courseName;
       course = courses.find((course:CourseType) => course.url === slug);
+
+      const savedMode = localStorage.getItem('mode');
+    if (savedMode) {
+      document.body.setAttribute('mode', savedMode);
+      initialMode.set(savedMode)
+      console.log(savedMode)
+    }
 
   })
 
@@ -116,13 +150,13 @@
       height: fit-content;
       position: sticky;
       border-bottom: 1px solid #484646;
-      background-color: #080D11;
+      background-color: var(--bg-color);
       z-index: 3;
     }
 
     .mobileNavBar {
       z-index: 5;
-      background-color: #080808;
+      background-color: var(--bg-color);
       position: absolute;
       width: 85%;
       height: 100vh;
@@ -138,7 +172,7 @@
     .mobileNavBarClosed {
       left:-100%;
       z-index: 5;
-      background-color: #080808;
+      background-color: var(--bg-color);
       position: absolute;
       width: 85%;
       height: 100vh;
@@ -162,7 +196,7 @@
         opacity: 1;
         padding: 10px;
         border-radius: 8px;
-        color: #39A7FF;
+        color: var(--secondary-color);
         font-weight: 600;
         background-color: #122635;
     }
@@ -213,7 +247,7 @@
     }
 
     p {
-      color: white;
+      color: var(--text-color);
       font-size: 16px;
       padding: 10px;
     }
@@ -221,6 +255,11 @@
     a {
       text-decoration: none;
     }
+
+    .toggleButton {
+    background: transparent;
+    border: none;
+  }
 
   }
 
@@ -233,9 +272,14 @@
     height: fit-content;
     position: sticky;
     border-bottom: 1px solid #48464672;
-    background-color: #080D11;
+    background-color: var(--bg-color);
     position: fixed;
     z-index: 4;
+  }
+
+  .toggleButton {
+    background: transparent;
+    border: none;
   }
 
  .navContainer {
@@ -287,7 +331,7 @@
 
 
   p {
-    color: white;
+    color: var(--text-color);
     font-size: 14px;
   }
 

@@ -1,7 +1,6 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import autoprefixer from 'autoprefixer';
-import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -11,17 +10,8 @@ const config = {
 		postcss: {
 			plugins: [autoprefixer]
 		}
-	}),
-	mdsvex({
-		extensions: ['.md', '.svx'],
-		// <https://mdsvex.com/docs#layouts>
-		// layout: {
-		//   // _: './src/routes/post.svelte'
-		//   blog: './src/routes/post.svelte'
-		// }
-	  }),
-	],
-	extensions: ['.svelte', '.md', '.svx'],
+	}),],
+	extensions: ['.svelte', '.md'],
 
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.

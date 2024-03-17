@@ -20,13 +20,13 @@
         flex-direction: column;
         gap: 8px;
         padding: 20px;
-        background-color: #0b161f;
+        background-color: var(--secondary-color);
         border: 1px solid #ffffff39;
         border-radius: 18px;
     }
 
     .card:hover {
-         background-color: #0D1D29;
+         background-color: var(--secondary-color);
     }
 
     .card img {
@@ -36,13 +36,13 @@
 
     .heading {
         font-size: 16px;
-        color: white;
+        color: var(--text-color);
         font-weight: 550;
     }
 
     .subheading {
         font-size: 14px;
-        color: #a2a2a2;
+        color: var(--text-color);
 
     }
     } 

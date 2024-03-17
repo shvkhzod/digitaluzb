@@ -14,7 +14,7 @@ if (typeof window !== 'undefined' && !window.customElements.get('tip-element')) 
               margin-top: 20px;
               width: fit-content;
               border: 1px solid #39A7FF;
-              background-color: #0D1D29;
+              background-color: var(--secondary-color);
               border-radius: 16px;
               color: #39A7FF;
               display: flex;

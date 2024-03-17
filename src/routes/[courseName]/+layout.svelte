@@ -124,7 +124,7 @@
         border-radius: 8px;
         color: #39A7FF;
         font-weight: 600;
-        background-color: #122635;
+        background-color: var(--secondary-color);
     }
 
     .topicHeading {
@@ -167,7 +167,7 @@
         flex-direction: row;
         align-items: flex-start; 
         justify-content: center;
-        background-color: #080D11;
+        background-color: var(--bg-color);
     }
 
     .courseContent {
@@ -182,7 +182,7 @@
         border-radius: 8px;
         color: #39A7FF;
         font-weight: 600;
-        background-color: #122635;
+        background-color: var(--secondary-color);
         font-size: 14px;
     }
 
@@ -196,7 +196,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: #080D11;
+        background-color: var(--bg-color);
     }
 
     .innerBar {
@@ -207,7 +207,7 @@
         gap: 2px;
         overflow-y: scroll;
         min-height: 100vh;
-        background-color: #080D11;
+        background-color: var(--bg-color);
 
     }
     p {
@@ -237,11 +237,11 @@
 }
 
 .innerBar::-webkit-scrollbar-track {
-    background-color: #080D11; /* Set the background color of the scrollbar track */
+    background-color: var(--bg-color); /* Set the background color of the scrollbar track */
 }
 
 .innerBar::-webkit-scrollbar-thumb {
-    background-color: #080808; /* Set the color of the scrollbar thumb */
+    background-color: var(--bg-color);/* Set the color of the scrollbar thumb */
     border-radius: 6px; /* Set the border radius of the scrollbar thumb */
 }
 
