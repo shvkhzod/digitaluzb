@@ -115,6 +115,7 @@
 	import { page } from "$app/stores";
 	import { writable } from "svelte/store";
   import { convertToDashedWords } from "$lib/utils";
+  import '../styles/index.pcss'
   
   let screenWidth: number;
 
