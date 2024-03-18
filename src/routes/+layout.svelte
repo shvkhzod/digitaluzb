@@ -68,7 +68,11 @@
     }}/>
   {/if}
   <div class='searchWithItems'>
-    <input class="searchBar" type="text" placeholder='Izlash...'/>
+    <input class="searchBar" type="text" placeholder='Izlash...' on:change={(e)=> {
+      search(e.currentTarget.value)
+      console.log('tryin to search: ', e.currentTarget.value)
+
+    }}/>
     {#if screenWidth !== undefined && screenWidth > 768}
       <div class='navItems'>
       {#if $initialMode == 'dark'}
@@ -110,6 +114,7 @@
 	import { courses } from "../data/courses";
 	import { page } from "$app/stores";
 	import { writable } from "svelte/store";
+  import { convertToDashedWords } from "$lib/utils";
   
   let screenWidth: number;
 
@@ -124,6 +129,54 @@
         localStorage.setItem('mode', mode);
         initialMode.set(mode) // Save mode to local storage
     }
+
+  async function search(query:string) {
+    if($page.params.courseName) {
+      console.log('searching inside a course:', $page.params.courseName)
+      //Inside course
+      const overview =await fetch(`/darslar/${$page.params.courseName}/mundarija.md`)
+      const overViewContent = (await overview.text()).split('\n');
+      for(const fileName of overViewContent) {
+        console.log('searching in file:', fileName)
+        const fileRes = await fetch(`/darslar/${$page.params.courseName}/${convertToDashedWords(fileName)}.md`);
+        const fileContent = await fileRes.text();
+        const lines = fileContent.split('\n');
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (line.includes(query)) {
+                console.log('this is the line:', line)
+                // Find the h3 heading above the found content
+                let heading = '';
+                for (let j = i; j >= 0; j--) {
+                    console.log('searching for a heading', lines[j])
+                    if (lines[j].startsWith('# ')) {
+                        heading = lines[j].substring(2).trim();
+                        break;
+                    } else if (lines[j].startsWith('### ')) {
+                        heading = lines[j].substring(4).trim();
+                        break;
+                    }
+                }
+                
+                // Extract surrounding characters
+                const startIndex = Math.max(0, i - 20);
+                const endIndex = Math.min(lines.length, i + 20);
+                const nearbyContent = lines.slice(startIndex, endIndex).join
+                // Log the result
+                console.log(`Found '${query}' in file '${fileName}' under the heading '${heading}'`);
+                console.log('Nearby content:', nearbyContent);
+                break; // Stop searching the current file once a match is found
+                            }
+        
+      } }
+    } else {
+      //Outside course
+
+
+    }
+  }  
+
+
   onMount(()=> {
       let slug = $page.params.courseName;
       course = courses.find((course:CourseType) => course.url === slug);
