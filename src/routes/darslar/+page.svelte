@@ -28,7 +28,7 @@
         <a href="/kompyuter-asoslari/kompyuter-haqida">
             <Card heading='Kompyuter Asoslari' subheading="Kompyuterlar haqida aniq va chuqurroq bilimga ega bo'ling" img='settings'/>
         </a>
-        <a href="/webAsoslari/internet">
+        <a href="/web-asoslari/internet">
             <Card heading='Web Dasturlash Asoslari' subheading="Dizayn olamiga shong'ishdan oldin eng kerakli fundamental bilimlarni ko'rib chiqing  " img='design'/>
         </a>
        </div>
