@@ -1,6 +1,6 @@
-<div class="programmingCourse">
-    <h1 class="heading">Umumiy resurslar ro'yhati   </h1>
-    <div class="search_filters">
+<div class='programmingCourse'>
+    <h1 class='heading'>Umumiy resurslar ro'yhati</h1>
+    <div class='searchFilters'>
         <button 
           on:click={() => searchFilter.set('dasturlash')}
           class={$searchFilter == 'dasturlash' ? 'active' : ''}
@@ -26,9 +26,11 @@
     {#if $searchFilter == 'dasturlash'}
     <div class="cardList">
         <a href="/kompyuter-asoslari/kompyuter-haqida">
-            <Card heading='Kompyuter Asoslari' subheading="Kompyuterlar haqida aniq va chuqurroq bilimga ega bo'ling " img='settings'/>
+            <Card heading='Kompyuter Asoslari' subheading="Kompyuterlar haqida aniq va chuqurroq bilimga ega bo'ling" img='settings'/>
         </a>
-        <Card heading='Web Dasturlash Asoslari' subheading="Dizayn olamiga shong'ishdan oldin eng kerakli fundamental bilimlarni ko'rib chiqing  " img='design'/>
+        <a href="/webAsoslari/internet">
+            <Card heading='Web Dasturlash Asoslari' subheading="Dizayn olamiga shong'ishdan oldin eng kerakli fundamental bilimlarni ko'rib chiqing  " img='design'/>
+        </a>
        </div>
     {/if}
 
@@ -53,7 +55,7 @@
 
 <style>
     @media (min-width:768px) {
-        .search_filters {
+        .searchFilters {
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -114,7 +116,7 @@
     }
 
     @media (max-width:768px) {
-        .search_filters {
+        .searchFilters {
             width: 100%;
             display: flex;
             flex-direction: row;

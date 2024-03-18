@@ -1,7 +1,7 @@
 <div class="card">
-    <img src={`/images/${img}.svg`} alt="programming" />
-    <h1 class="heading">{heading}</h1>
-    <p class="subheading">{subheading}</p>
+    <img src={`/images/${img}.svg`} alt='programming' />
+    <h1 class='heading'>{heading}</h1>
+    <p class='subheading'>{subheading}</p>
 </div>
 
 <script lang='ts'>

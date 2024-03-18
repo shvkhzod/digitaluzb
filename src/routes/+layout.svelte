@@ -120,7 +120,7 @@
   let screenWidth: number;
 
   const mobileNavOpen = writable(false);
-  const initialMode = writable('light')
+  const initialMode = writable('dark')
 
   let course: CourseType | undefined;
 

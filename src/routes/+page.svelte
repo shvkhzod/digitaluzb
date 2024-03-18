@@ -1,21 +1,21 @@
-<img class='grid' alt="grid" src="/images/grid.svg"/>
-<div class='aboutProject'>
-    <p class="name">digitaluzb</p>
-    <h1 class="intro">O'zingizga o'zingiz ta'lim bering</h1>
-    <p class="subHeading">Kerakli sohalar boyicha open source bilim markazi</p>
-    <div class="landing_page_buttons">
+<img class='grid' alt='grid' src='/images/grid.svg'/>
+<div class='landingPage'>
+    <p class='projectName'>digitaluzb</p>
+    <h1 class='intro'>O'zingizga o'zingiz ta'lim bering</h1>
+    <p class='subHeading'>Kerakli sohalar boyicha open source bilim markazi</p>
+    <div class='landingButtons'>
         <a href="/darslar">
-            <button class="primary_button">Darslar</button>
+            <button class="primaryButton">Darslar</button>
         </a>
         <a href="/loyiha-haqida">
-            <button class="secondary_button">Loyiha Haqida</button>
+            <button class="secondaryButton">Loyiha Haqida</button>
         </a>
     </div>
     <div class='cardList'>
         <a href="/kompyuter-asoslari/kompyuter-haqida">
             <Card heading='Kompyuter Asoslari' subheading="Kompyuterlar haqida aniq va chuqurroq bilimga ega bo'ling " img='settings'/>
         </a>
-        <Card heading='Dizayn Asoslari' subheading="Dizayn olamiga shong'ishdan oldin eng kerakli fundamental bilimlarni ko'rib chiqing  " img='design'/>
+        <Card heading='Dizayn Asoslari' subheading="Dizayn olamiga shong'ishdan oldin eng kerakli fundamental bilimlarni ko'rib chiqing" img='design'/>
         <Card heading='Marketing Asoslari' subheading="Kompyuter haqida aniq ma'lumotga ega bo'ling " img='notification'/>
     </div>
 
@@ -27,7 +27,7 @@
 
 <style>
     @media (min-width: 768px) {
-        .name {
+        .projectName {
         font-size: 16px;
         color: var(--primary-color);
         font-weight: 500;
@@ -37,7 +37,7 @@
         border-radius: 30px;
     }
 
-    .aboutProject {
+    .landingPage {
         z-index: 2;
         margin-top: 140px;
         display: flex;
@@ -85,7 +85,7 @@
         z-index: 1;
     }
 
-    .landing_page_buttons {
+    .landingButtons {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -93,7 +93,7 @@
         margin-bottom: 24px;
     }
 
-    .primary_button {
+    .primaryButton {
         padding: 10px 20px;
         background-color: var(--primary-color);
         color: var(--text-color);
@@ -104,7 +104,7 @@
         cursor: pointer;
     }
 
-    .secondary_button {
+    .secondaryButton {
         padding: 10px 20px;
         border: 1px solid var(--primary-color);
         color: var(--primary-color);
@@ -115,12 +115,12 @@
         cursor: pointer;
     }
 
-    .primary_button:hover {
+    .primaryButton:hover {
         background-color: var(--solid-hover);
         transition: ease 0.4s;
     }
 
-    .secondary_button:hover {
+    .secondaryButton:hover {
         background-color: var(--solid-hover);
         color: var(--text-color);
         transition: ease 0.4s;
@@ -128,7 +128,7 @@
     }
 
     @media (max-width: 768px) {
-        .name {
+        .projectName {
         font-size: 18px;
         color: var(--primary-color);
         font-weight: 500;
@@ -138,7 +138,7 @@
         border-radius: 30px;
     }
 
-    .aboutProject {
+    .landingPage {
         margin-top: 40px;
         display: flex;
         flex-direction: column;
@@ -165,7 +165,7 @@
         text-align: center;
     }
 
-    .landing_page_buttons {
+    .landingButtons {
         display: flex;
         flex-direction: row;
         gap: 20px;
@@ -173,7 +173,7 @@
         margin-bottom: 24px;
     }
 
-    .primary_button {
+    .primaryButton {
         padding: 10px 20px;
         background-color: var(--primary-color);
         color: var(--text-color);
@@ -184,7 +184,7 @@
         cursor: pointer;
     }
 
-    .secondary_button {
+    .secondaryButton {
         padding: 10px 20px;
         border: 1px solid var(--primary-color);
         color: var(--primary-color);
