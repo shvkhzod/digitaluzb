@@ -204,8 +204,9 @@
     .cardList {
         width: 100%;
         display: flex;
-        flex-direction: row;
-        gap: 18px;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0px 20px;
         justify-content: center;
     }
 

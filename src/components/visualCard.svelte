@@ -73,18 +73,19 @@
         .visualCard {
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 20px;
     }
 
     .card {
-        width: 120px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 20px;
-        padding: 24px 0px;
+        padding: 24px 20px;
         border-radius: 20px;
         background-color: var(--secondary-color);
         border: var(--border-color) solid 1px;
@@ -102,23 +103,17 @@
     }
 
     .cardContent {
-        width: 100%;
+        width: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .cardTitle {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 550;
         color: var(--text-color);
     }
 
-    .cardDescription {
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--text-color-secondary);
-    }
     }
 </style>
