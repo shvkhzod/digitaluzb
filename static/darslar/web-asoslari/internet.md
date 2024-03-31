@@ -1,4 +1,4 @@
-# Internet haqida
+# Internet
 Bugungi kunda deyarli hamma internetdan foydalanadi, lekin juda kam odam bu nima ekanligini tushunadi, shuning uchun bugun bir necha daqiqa ichida siz o'sha daholar guruhiga qo'shilishingiz mumkin (hazil, unchalik daho bo'lmasa ham, yaxshi guruh)
 
 ### Tarmoqlar tarmoqi
@@ -8,5 +8,6 @@ Men do'stimni kompyuteriga counter strike 1.6 o'yinini o'tkazib bermoqchiman. En
 \
 \
 Demak, men o'zimni kompyuterimni do'stimni kompyuteriga ulab undaki narsalarni ko'rib va o'zimga o'tkazib olishim mumkin.
-``
+
+![foundation](/images/web01.webp)
 

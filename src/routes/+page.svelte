@@ -1,8 +1,8 @@
-<img class='grid' alt='grid' src='/images/grid.svg'/>
+
 <div class='landingPage'>
     <p class='projectName'>digitaluzb</p>
     <h1 class='intro'>O'zingizga o'zingiz ta'lim bering</h1>
-    <p class='subHeading'>Kerakli sohalar boyicha open source bilim markazi</p>
+    <p class='subHeading'>Sizning ta'limingiz - 100% sizning ma'suliyatingiz</p>
     <div class='landingButtons'>
         <a href="/darslar">
             <button class="primaryButton">Darslar</button>
@@ -12,26 +12,25 @@
         </a>
     </div>
     <div class='cardList'>
-        <a href="/kompyuter-asoslari/kompyuter-haqida">
-            <Card heading='Kompyuter Asoslari' subheading="Kompyuterlar haqida aniq va chuqurroq bilimga ega bo'ling " img='settings'/>
-        </a>
-        <Card heading='Dizayn Asoslari' subheading="Dizayn olamiga shong'ishdan oldin eng kerakli fundamental bilimlarni ko'rib chiqing" img='design'/>
-        <Card heading='Marketing Asoslari' subheading="Kompyuter haqida aniq ma'lumotga ega bo'ling " img='notification'/>
+        <VisualCard title="Dasturlash" image='settings'/>
+        <VisualCard title="Dizayn" image='design'/>
+        <VisualCard title="Marketing" image='notification'/>
     </div>
+    <p class="promise">Registratsiyasiz.   To'lovsiz.   Reklamasiz</p>
 
 </div>
 
 <script lang='ts'>
-    import Card from '../components/card.svelte'
+    import VisualCard from '../components/visualCard.svelte'
 </script>
 
 <style>
     @media (min-width: 768px) {
         .projectName {
         font-size: 16px;
-        color: var(--primary-color);
+        color: var(--text-color);
         font-weight: 500;
-        border: 1px solid var(--primary-color);
+        border: 1px solid var(--border-color);
         padding: 10px 20px;
         background-color: var(--secondary-color);
         border-radius: 30px;
@@ -65,11 +64,11 @@
         }
 
     .cardList {
-        width: 780px;
+        width: min-content;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         gap: 20px;
+        align-items: center;
         justify-content: center;
     }
 
@@ -96,7 +95,7 @@
     .primaryButton {
         padding: 10px 20px;
         background-color: var(--primary-color);
-        color: var(--text-color);
+        color: var(--bg-color);
         border: none;
         border-radius: 30px;
         font-size: 16px;
@@ -125,6 +124,13 @@
         color: var(--text-color);
         transition: ease 0.4s;
     }
+
+    .promise {
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--text-color-secondary);
+    }
     }
 
     @media (max-width: 768px) {
@@ -132,7 +138,7 @@
         font-size: 18px;
         color: var(--primary-color);
         font-weight: 500;
-        border: 1px solid var(--primary-color);
+        border: 1px solid var(--border-color);
         padding: 10px 20px;
         background-color: var(--secondary-color);
         border-radius: 30px;
@@ -176,7 +182,7 @@
     .primaryButton {
         padding: 10px 20px;
         background-color: var(--primary-color);
-        color: var(--text-color);
+        color: var(--bg-color);
         border: none;
         border-radius: 30px;
         font-size: 18px;
@@ -199,8 +205,7 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
+        gap: 18px;
         justify-content: center;
     }
 
@@ -209,11 +214,11 @@
         
     }
 
-    .grid {
-        position: absolute;
-        width: 200%;
-        z-index: -1;
-        left: -200px;
+    .promise {
+        margin-top: 40px;
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--text-color-secondary);
     }
     }
 </style>

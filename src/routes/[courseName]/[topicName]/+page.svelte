@@ -145,7 +145,7 @@
     }
 
     .crumbs {
-        color: var(--primary-color);
+        color: var(--text-color-secondary);
         font-size: 14px;
         font-weight: 600;
     

@@ -55,8 +55,8 @@
         flex-direction: column;
         gap: 8px;
         padding: 20px;
-        background-color: #0b161f;
-        border: 1px solid #ffffff39;
+        background-color: var(--secondary-color);
+        border: 1px solid var(--border-color);
         border-radius: 18px;
     }
 

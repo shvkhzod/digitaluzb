@@ -65,7 +65,7 @@
         }
 
         .active {
-            color: var(--text-color);
+            color: var(--bg-color);
             font-size: 16px;
             padding: 10px;
             background-color: var(--primary-color);
@@ -126,7 +126,7 @@
         }
 
         .active {
-            color: var(--text-color);
+            color: var(--bg-color);
             font-size: 16px;
             padding: 10px;
             background-color: var(--primary-color);
