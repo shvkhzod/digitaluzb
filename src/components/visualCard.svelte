@@ -61,12 +61,6 @@
         font-weight: 550;
         color: var(--text-color);
     }
-
-    .cardDescription {
-        font-size: 16px;
-        font-weight: 400;
-        color: var(--text-color-secondary);
-    }
     }
 
     @media (max-width: 768px) {
