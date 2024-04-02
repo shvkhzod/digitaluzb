@@ -12,8 +12,11 @@ Demak, men o'zimni kompyuterimni do'stimni kompyuteriga ulab undaki narsalarni k
 \
 Internet esa tarmoqlar tarmoqidir, ya'ni millionlab kompyuterlar bir biriga ulangan tarmoq. Bu kompyuterlarning ba'zilari server, ba'zilari esa oddiy foydanalnuvchi kompyuterlar
 ![foundation](/images/web02.webp)
-
-
-
-![foundation](/images/web01.webp)
+### Server
+Server - ham kompyuter, sizning kompyuterningizdan farqi, server tarmoqda 24/7 onlayn, ya'ni u ochib qolmaydi va har doim ishlab turadi
+### Optik Kabellar
+Hop agar 2ta kompyuter bitta honada bo'lsa maxsus kabel bilan ularni ulasa bo'ladi, lekin AQSHdagi kompyuter bilan O'zbekistondagi kompyuter qanaqa qilib ulanadi?
+\
+\
+![foundation](/images/web03.webp)
 
