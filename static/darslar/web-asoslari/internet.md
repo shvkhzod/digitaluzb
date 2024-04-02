@@ -7,7 +7,13 @@ Men do'stimni kompyuteriga counter strike 1.6 o'yinini o'tkazib bermoqchiman. En
 ![foundation](/images/web01.webp)
 \
 \
-Demak, men o'zimni kompyuterimni do'stimni kompyuteriga ulab undaki narsalarni ko'rib va o'zimga o'tkazib olishim mumkin.
+Demak, men o'zimni kompyuterimni do'stimni kompyuteriga ulab undaki narsalarni ko'rib va o'zimga o'tkazib olishim mumkin. Maxsus kabel bilan boshqa do'stlarim ham ulanib bilishadi - va bu narsa tarmoq deb ataladi
+\
+\
+Internet esa tarmoqlar tarmoqidir, ya'ni millionlab kompyuterlar bir biriga ulangan tarmoq. Bu kompyuterlarning ba'zilari server, ba'zilari esa oddiy foydanalnuvchi kompyuterlar
+![foundation](/images/web02.webp)
+
+
 
 ![foundation](/images/web01.webp)
 

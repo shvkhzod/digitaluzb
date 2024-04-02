@@ -325,7 +325,7 @@
     width: 100%;
     height: fit-content;
     position: sticky;
-    border-bottom: 1px solid #48464672;
+    border-bottom: 1px solid var(--border-color);
     background-color: var(--bg-color);
     position: fixed;
     z-index: 4;
