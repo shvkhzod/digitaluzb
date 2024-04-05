@@ -1,3 +1,4 @@
+![DigitalUzb Logo](/github.png)
 # Loyiha Haqida
 Digitaluzb - dasturlash, dizayn va marketing bilan 
 bog'liq keng qamrovli ma'lumotlar va manbalarni 
