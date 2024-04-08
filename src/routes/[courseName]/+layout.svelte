@@ -180,7 +180,7 @@
         opacity: 1;
         padding: 12px;
         border-radius: 8px;
-        color: var(--text-color);
+        color: var(--primary-color  );
         font-weight: 600;
         background-color: var(--secondary-color);
         font-size: 14px;

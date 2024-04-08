@@ -52,10 +52,11 @@
         padding: 10px 20px;
         font-size: 16px;
         background-color: var(--primary-color);
-        color: var(--bg-color);
+        color: var(--text-solid-color);
         border: none;
         border-radius: 30px;
         cursor: pointer;
+        box-shadow: 0 0 20px rgba(57, 167, 255, 0.8);
     }
 }
 

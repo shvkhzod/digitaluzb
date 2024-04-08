@@ -1,6 +1,11 @@
 
 <div class='landingPage'>
-    <p class='projectName'>digitaluzb</p>
+    {#if mode == 'dark'}
+    <img class="landingImageDark" src="/images/landingDark.svg" alt="landing"/>
+    {/if}
+    {#if mode == 'light'}
+    <img class="landingImageLight" src="/images/landingLight.svg" alt="landing"/>
+    {/if}
     <h1 class='intro'>O'zingizga o'zingiz ta'lim bering</h1>
     <p class='subHeading'>Sizning ta'limingiz - 100% sizning ma'suliyatingiz</p>
     <div class='landingButtons'>
@@ -11,17 +16,29 @@
             <button class="secondaryButton">Loyiha Haqida</button>
         </a>
     </div>
-    <div class='cardList'>
-        <VisualCard title="Dasturlash" image='settings'/>
-        <VisualCard title="Dizayn" image='design'/>
-        <VisualCard title="Marketing" image='notification'/>
-    </div>
     <p class="promise">Registratsiyasiz.   To'lovsiz.   Reklamasiz</p>
 
 </div>
 
 <script lang='ts'>
-    import VisualCard from '../components/visualCard.svelte'
+	import { onMount } from 'svelte';
+
+    let mode = 'dark';
+    function handleModeChange(event: CustomEvent<string>) {
+    mode = event.detail;
+}   
+
+    onMount(() => {
+    mode  = document.body.getAttribute('mode')!;
+    console.log('currentMode', mode)
+    window.addEventListener('modeChange', handleModeChange as EventListener);
+
+    return () => {
+        window.removeEventListener('modeChange', handleModeChange as EventListener);
+    };
+
+});
+
 </script>
 
 <style>
@@ -38,7 +55,7 @@
 
     .landingPage {
         z-index: 2;
-        margin-top: 140px;
+        margin-top: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -46,7 +63,7 @@
     }
 
     .intro {
-        margin-top: 12px;
+        margin-top: -60px;
         font-size: 52px;
         font-weight: 550;
         line-height: 56px;
@@ -72,6 +89,18 @@
         justify-content: center;
     }
 
+    .landingImageDark {
+        width: 300px;
+        height: 300px;
+    }
+
+    .landingImageLight {
+        width: 170px;
+        height: 170px;
+        margin-top: 72px;
+        margin-bottom: 60px;
+    }
+
     a {
         text-decoration: none;
         
@@ -88,12 +117,13 @@
     .primaryButton {
         padding: 10px 20px;
         background-color: var(--primary-color);
-        color: var(--bg-color);
+        color: var(--text-solid-color);
         border: none;
         border-radius: 30px;
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
+        box-shadow: 0 0 20px rgba(57, 167, 255, 0.8);
     }
 
     .secondaryButton {
@@ -119,7 +149,7 @@
     }
 
     .promise {
-        margin-top: 40px;
+        margin-top: 0px;
         font-size: 15px;
         font-weight: 400;
         color: var(--text-color-secondary);
@@ -175,7 +205,7 @@
     .primaryButton {
         padding: 10px 20px;
         background-color: var(--primary-color);
-        color: var(--bg-color);
+        color: var(--text-solid-color);
         border: none;
         border-radius: 30px;
         font-size: 18px;

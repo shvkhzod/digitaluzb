@@ -13,10 +13,10 @@ if (typeof window !== 'undefined' && !window.customElements.get('tip-element')) 
             .tip {
               margin-top: 20px;
               width: fit-content;
-              border: 1px solid var(--border-color);
+              border: 1px solid var(--primary-color);
               background-color: var(--secondary-color);
               border-radius: 16px;
-              color: var(--text-color);
+              color: var(--primary-color);
               display: flex;
               flex-direction: row;
               align-items: center;

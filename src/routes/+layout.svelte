@@ -3,9 +3,12 @@
   <div class={$mobileNavOpen ? "mobileNavBar" : "mobileNavBarClosed"}>
 
       <div class="sidebarHeader">
-        <a href="/">
-          <p class="logo">digitaluzb</p>
-        </a>
+        <div class="logo">
+          <a href="/">
+            <img src="/digitallogo.svg" alt="logo" />
+            <p class="logo">digitaluzb</p>
+          </a>
+        </div>
          <!-- svelte-ignore a11y-click-events-have-key-events -->
          <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
          <img class="close" src="/close.svg" alt="close" on:click={()=> {
@@ -57,7 +60,8 @@
   {#if screenWidth !==undefined && screenWidth > 768}
     <div class='logo'>
       <a href="/">
-        <p class="logo">digitaluzb</p>
+        <img class="dlogo" src="/digitallogo.svg" alt="logo" />
+        <p>digitaluzb</p>
       </a>
     </div>
     {:else}
@@ -104,7 +108,7 @@
 </div>
 </div>
 <div class="pageContent">
-  <slot/>
+  <slot {initialMode}/>
 </div>
 
 <script lang='ts'>
@@ -116,6 +120,8 @@
 	import { writable } from "svelte/store";
   import { convertToDashedWords } from "$lib/utils";
   import '../styles/index.pcss'
+
+
   
   let screenWidth: number;
 
@@ -129,6 +135,10 @@
         console.log(mode)
         localStorage.setItem('mode', mode);
         initialMode.set(mode) // Save mode to local storage
+        window.dispatchEvent(new CustomEvent('modeChange', {
+          detail: mode
+        }))
+        
     }
 
   async function search(query:string) {
@@ -354,6 +364,21 @@
 
   .logo {
     width: 180px;
+  }
+
+  .logo a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .logo p {
+    font-size: 16px;
+  }
+
+  .dlogo{
+    width: 28px;
   }
 
     .searchBar {
