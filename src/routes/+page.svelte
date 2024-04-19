@@ -17,11 +17,17 @@
         </a>
     </div>
     <p class="promise">Registratsiyasiz.   To'lovsiz.   Reklamasiz</p>
+    <div class="cardList">
+        <VerticalCard image="/images/settings.svg" title="Choynaklar Uchun Dasturlash" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
+        <VerticalCard image="/images/settings.svg" title="Ilon Masklar Uchun Python" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
+        <VerticalCard image="/images/settings.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
+    </div>
 
 </div>
 
 <script lang='ts'>
 	import { onMount } from 'svelte';
+    import VerticalCard from '../components/verticalCard.svelte';
 
     let mode = 'dark';
     function handleModeChange(event: CustomEvent<string>) {
@@ -81,12 +87,14 @@
         }
 
     .cardList {
+        margin-top: 20px;
         width: min-content;
         display: flex;
         flex-direction: row;
         gap: 20px;
         align-items: center;
         justify-content: center;
+        margin-bottom: 100px;
     }
 
     .landingImageDark {
@@ -168,7 +176,7 @@
     }
 
     .landingPage {
-        margin-top: 40px;
+        margin-top: 0px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -176,8 +184,16 @@
         padding: 20px;
     }
 
+    .landingImageLight {
+        width: 100%;
+    }
+
+    .landingImageDark {
+        width:300px;
+    }
+
     .intro {
-        margin-top: 12px;
+        margin-top: -48px;
         font-size: 28px;
         font-weight: 550;
         color: var(--text-color);
