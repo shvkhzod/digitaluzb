@@ -3,10 +3,10 @@
   <div class={$mobileNavOpen ? "mobileNavBar" : "mobileNavBarClosed"}>
 
       <div class="sidebarHeader">
-        <div class="logo">
-          <a href="/">
-            <img src="/digitallogo.svg" alt="logo" />
-            <p class="logo">digitaluzb</p>
+        <div class="trademark">
+          <a href="/" class="trademark-area">
+            <img src="/digitallogo.svg" alt="logo" class="logo"/>
+            <p class="logo-title">digitaluzb</p>
           </a>
         </div>
          <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -282,8 +282,14 @@
     }
 
     .logo {
-      width: 180px;
+      width:32px;
     }
+
+    .trademark-area{
+      display: flex;
+      flex-direction: row;
+    }
+
 
     .searchBar {
       width: 220px;

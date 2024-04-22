@@ -8,8 +8,7 @@
     <p>
         Loyihadagi ma'lumotlarni 
         yaratish va yangilash boshqa ishtirokchilarning jamoaviy harakatlariga asoslanadi. 
-        Hamkorlikdagi sa'y-harakatlar IT sohalarida imkoniyatlarini kengaytirish uchun keng ko'lamli g'oyalar, o'quv qo'llanmalari va eng 
-        yaxshi amaliyotlarni taklif qilishga qaratilgan.
+        Hamkorlikdagi sa'y-harakatlar IT sohalarida imkoniyatlarini kengaytirish uchun keng ko'lamli g'oyalar va o'quv qo'llanmalarini yaratishga qaratilgan.
     </p>
     <p>
         Siz tajribali mutaxassis 

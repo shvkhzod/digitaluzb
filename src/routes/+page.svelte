@@ -17,10 +17,34 @@
         </a>
     </div>
     <p class="promise">Registratsiyasiz.   To'lovsiz.   Reklamasiz</p>
+    <h1>Bu loyiha kimlar uchun ?</h1>
+    <div class="benefits-container">
+        <div class="audience">
+          <img src="/images/school.svg" class="audience-icon" alt="Icon 1">
+          <div class="audience-content">
+            <p class="audience-headline">An'anaviy ta'limni yoqtirmaydiganlar</p>
+            <p class="audience-p">Ko'p odamlar atrofida vaqt o'tkazmaydiganlar va o'z tezligida o'qishni afzal ko'radiganlar</p>  
+        </div>
+        </div>
+        <div class="audience">
+         <img src="/images/book.svg" class="audience-icon" alt="Icon 1">
+          <div class="audience-content">
+            <p class="audience-headline">Kitob sevarlar</p>
+            <p class="audience-p">Video yoki audio formatdan kora matndan o'qib tushunishi osonroq bo'lganlar uchun</p>  
+          </div>
+        </div>
+        <div class="audience">
+            <img src="/images/search.svg" class="audience-icon" alt="Icon 1">
+             <div class="audience-content">
+               <p class="audience-headline">O'zini o'zi etaklab biladiganlar</p>
+               <p class="audience-p">Har qanday mavzuni haqida o'zi izlanib, topib, o'rganib biladiganlar uchun </p>  
+             </div>
+           </div>
+      </div>
     <div class="cardList">
-        <VerticalCard image="/images/settings.svg" title="Choynaklar Uchun Dasturlash" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
+        <VerticalCard image="/images/settings.svg" title="Kompyuter Asoslari" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
         <VerticalCard image="/images/settings.svg" title="Ilon Masklar Uchun Python" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
-        <VerticalCard image="/images/settings.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
+        <VerticalCard image="/images/notification.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
     </div>
 
 </div>
@@ -78,7 +102,13 @@
         width: 60%;
         
     }
-
+    
+    h1 {
+        width: 100%;
+        color: var(--text-color);
+        font-weight: 550;
+        text-align: center;
+    }
     .subHeading {
         margin-top: 8px;
         font-size: 18px;
@@ -117,6 +147,7 @@
     .landingButtons {
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 20px;
         margin-top: 24px;
         margin-bottom: 24px;
@@ -158,10 +189,71 @@
 
     .promise {
         margin-top: 0px;
+        margin-bottom: 80px;
         font-size: 15px;
         font-weight: 400;
         color: var(--text-color-secondary);
-    }
+     }
+ 
+.benefits-container {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   width: 480px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+   position: relative;
+   padding-right: 40px;
+
+ }
+ 
+ .audience {
+   display: flex;
+   flex-direction: flex;
+   gap: 32px;
+ }
+ 
+ .audience img {
+   width: 60px;
+   height: 60px;
+   
+ }
+ 
+ .audience-p {
+  margin-top: 8px;
+  color: var(--text-color-secondary);
+}
+
+.audience-headline {
+    margin-top: 12px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.audience::after {
+  content: '';
+  position: absolute;
+  left: 6%;
+  top: 40px;
+  width: 2px;
+  height: 200px;
+  opacity: 1;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.audience:last-child::after {
+  display: none;
+}
+
+.audience-icon {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 22px;
+}
+
     }
 
     @media (max-width: 768px) {
@@ -255,10 +347,74 @@
     }
 
     .promise {
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 15px;
         font-weight: 400;
         color: var(--text-color-secondary);
     }
+    
+
+  h1 {
+    margin-top: 40px;
+    color:var(--text-color);
+    font-size: 28px;
+  }
+    .benefits-container {
+   margin-top: 20px;
+   margin-bottom: 40px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+   position: relative;
+   padding: 16px;
+ }
+ 
+ .audience {
+   display: flex;
+   flex-direction: flex;
+   gap: 32px;
+ }
+ 
+ .audience img {
+   width: 60px;
+   height: 60px;
+   
+ }
+ 
+ .audience-p {
+  margin-top: 8px;
+  color: var(--text-color-secondary);
+}
+
+.audience-headline {
+    margin-top: 12px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.audience::after {
+  content: '';
+  position: absolute;
+  left: 13%;
+  top: 40px;
+  width: 2px;
+  height: 300px;
+  opacity: 1;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.audience:last-child::after {
+  display: none;
+}
+
+.audience-icon {
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 22px;
+}
     }
 </style>
