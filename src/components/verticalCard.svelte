@@ -44,8 +44,8 @@
 
   .iconContainer {
     position: absolute;
-    top: 0px;
-    left: 10px;
+    top: 20px;
+    left: 30px;
     transition: transform 0.3s ease-in-out;
   }
   
@@ -54,8 +54,8 @@
   }
 
   .icon {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: auto;
   }
 
   .content {
