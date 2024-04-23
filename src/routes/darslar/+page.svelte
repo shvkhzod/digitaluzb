@@ -26,22 +26,22 @@
     {#if $searchFilter == 'dasturlash'}
     <div class="cardList">
         <a href="/kompyuter-asoslari/kompyuter-haqida">
-            <Card heading='Kompyuter Asoslari' subheading="Kompyuterlar haqida aniq va chuqurroq bilimga ega bo'ling" img='settings'/>
+            <VerticalCard image="/images/computer2.svg" title="Kompyuter Asoslari" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
         </a>
         <a href="/web-asoslari/internet">
-            <Card heading='Web Dasturlash Asoslari' subheading="Dizayn olamiga shong'ishdan oldin eng kerakli fundamental bilimlarni ko'rib chiqing  " img='design'/>
+            <VerticalCard image="/images/www2.svg" title="Web Dasturlash Asoslari" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
         </a>
        </div>
     {/if}
 
     {#if $searchFilter == 'dizayn'}
-    <Card heading='Dizayn Asoslari' subheading="Kompyuter haqida aniq ma'lumotga ega bo'ling " img='design'/>
-
+    <VerticalCard image="/images/marketing.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
+   
     {/if}
 
     {#if $searchFilter == 'marketing'}
        <a href="/marketing-asoslari/marketing-nima">
-            <Card heading='Marketing Asoslari' subheading="Kompyuter haqida aniq ma'lumotga ega bo'ling " img='notification'/>
+        <VerticalCard image="/images/marketing.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
         </a>
     {/if}
 </div>
@@ -49,6 +49,7 @@
 <script lang='ts'>
 	import { writable } from 'svelte/store';
     import Card from '../../components/card.svelte'
+	import VerticalCard from '../../components/verticalCard.svelte';
 
     const searchFilter = writable<string>('dasturlash');
 </script>
