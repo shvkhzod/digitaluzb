@@ -226,7 +226,7 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
       padding: 20px;
       left: 0;
       border-right: 1px solid #484646;
@@ -288,6 +288,8 @@
     .trademark-area{
       display: flex;
       flex-direction: row;
+      align-items: center;
+      gap: 8px;
     }
 
 
@@ -319,7 +321,6 @@
     p {
       color: var(--text-color);
       font-size: 16px;
-      padding: 10px;
     }
 
     a {
@@ -329,6 +330,15 @@
     .toggleButton {
     background: transparent;
     border: none;
+  }
+
+  .mobileNavs {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 8px;
+  
   }
 
   }

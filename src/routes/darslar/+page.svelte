@@ -1,51 +1,49 @@
 <div class='programmingCourse'>
     <h1 class='heading'>Umumiy resurslar ro'yhati</h1>
     <div class='searchFilters'>
-        <button 
-          on:click={() => searchFilter.set('dasturlash')}
-          class={$searchFilter == 'dasturlash' ? 'active' : ''}
-        > 
+      <button 
+        on:click={() => searchFilter.set('dasturlash')}
+        class={$searchFilter == 'dasturlash' ? 'active' : ''}
+      > 
         Dasturlash
-        </button>
-
-        <button 
+      </button>
+  
+      <button 
         on:click={() => searchFilter.set('dizayn')}
         class={$searchFilter == 'dizayn' ? 'active' : ''}
       > 
-      Dizayn
+        Dizayn
       </button>
-
+  
       <button 
-      on:click={() => searchFilter.set('marketing')}
-      class={$searchFilter == 'marketing' ? 'active' : ''}
-    > 
-    Marketing
-    </button>
-
+        on:click={() => searchFilter.set('marketing')}
+        class={$searchFilter == 'marketing' ? 'active' : ''}
+      > 
+        Marketing
+      </button>
     </div>
+  
     {#if $searchFilter == 'dasturlash'}
     <div class="cardList">
-        <a href="/kompyuter-asoslari/kompyuter-haqida">
-            <VerticalCard image="/images/computer2.svg" title="Kompyuter Asoslari" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
-        </a>
-        <a href="/web-asoslari/internet">
-            <VerticalCard image="/images/www2.svg" title="Web Dasturlash Asoslari" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
-        </a>
-       </div>
+      <a href="/kompyuter-asoslari/kompyuter-haqida">
+        <VerticalCard image="/images/comp3.svg" title="Kompyuter Asoslari" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
+      </a>
+      <a href="/web-asoslari/internet">
+        <VerticalCard image="/images/web3.svg" title="Web Dasturlash Asoslari" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
+      </a>
+    </div>
     {/if}
-
+  
     {#if $searchFilter == 'dizayn'}
-    <VerticalCard image="/images/marketing.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
-   
+    <VerticalCard image="/images/brand3.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
     {/if}
-
+  
     {#if $searchFilter == 'marketing'}
-       <a href="/marketing-asoslari/marketing-nima">
-        <VerticalCard image="/images/marketing.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
-        </a>
+    <a href="/marketing-asoslari/marketing-nima">
+      <VerticalCard image="/images/brand3.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
+    </a>
     {/if}
-</div>
-
+  </div>
 <script lang='ts'>
 	import { writable } from 'svelte/store';
     import Card from '../../components/card.svelte'
@@ -57,32 +55,32 @@
 <style>
     @media (min-width:768px) {
         .searchFilters {
-            width: 100%;
+            width: 520px;
             display: flex;
             flex-direction: row;
-            gap: 20px;
+            gap: 40px;
             justify-content: center;
             align-items: center;
+            background-color: var(--bg-color-secondary);
+            padding: 4px 0px;
+            border-radius: 40px;
         }
 
         .active {
-            color: var(--bg-color);
+          
             font-size: 16px;
             padding: 10px;
-            background-color: var(--primary-color);
-            border-radius: 20px;
-            border: none;
+            border-radius: 0px;
+            border-top: 1px solid var(--primary-color);
             transition: ease-in-out 0.3s;
-            border: 1px solid var(--primary-color);
         }
 
         button {
             color: var(--text-color);
             font-size: 16px;
             padding: 10px;
-            border: 1px solid var(--text-color);
+            border: none;
             background-color: transparent;
-            border-radius: 20px;
             transition: ease-in-out 0.3s;
         }
  

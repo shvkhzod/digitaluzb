@@ -17,6 +17,16 @@
         </a>
     </div>
     <p class="promise">Registratsiyasiz.   To'lovsiz.   Reklamasiz</p>
+    <div class='telegramLink'>
+        <div class="telegramIntro">
+            <p class="tHeadline">Digitaluzb Community</p> 
+            <p class="tSub">Boshqa o'rganuvchilar bilan suhbatlashing. Mavzular haqida samimiy fikringizni bildiring va ma'lumotlarni yaxshishga hissa qo'shing</p>
+            <p class="tSubMobile">Boshqa o'rganuvchilar bilan suhbatlashing </p>
+
+            <a href="https://t.me/digitaluzb_tg" target="_blank" class="normalBtn">Qo'shilish</a> <!-- Add link to telegram group -->
+        </div>
+        <img src="/images/tgIcon.svg" alt="telegram" class="tgIcon"/>
+    </div>
     <h1>Bu loyiha kimlar uchun ?</h1>
     <div class="benefits-container">
         <div class="audience">
@@ -41,6 +51,29 @@
              </div>
            </div>
       </div>
+    <div class="from">
+        <div class="from-text">
+            <h2 class="from-headline">
+                Dasturchilar, Dizaynerlar va Marketologlardan
+            </h2>
+            <p class="from-p">
+                Yangi Dasturchi, Dizaynerlar va Marketologlarga
+            </p>
+            <button class="primaryButton">Hissa qoshish</button>
+        </div>
+        <div class="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <h1>Darslar</h1>
     <div class="cardList">
         <VerticalCard image="/images/comp3.svg" title="Kompyuter Asoslari" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
         <VerticalCard image="/images/web3.svg" title="Web Dasturlash Asoslari" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
@@ -109,13 +142,100 @@
         font-weight: 550;
         text-align: center;
     }
+
+    .telegramLink {
+        width: 720px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        background-color: var(--bg-color-secondary);
+        margin-bottom: 80px;
+        overflow: hidden;
+        padding: 20px 32px;
+    }
+
+    .telegramIntro {
+        width: 65%;
+    }
+
+    .tHeadline {
+        font-size: 24px;
+        font-weight: 550;
+        color: var(--text-color);
+    }
+
+    .tSub {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text-color-secondary);
+        margin-bottom: 20px;
+    }
+
+    .tgIcon {
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+    }
     .subHeading {
         margin-top: 8px;
         font-size: 18px;
         font-weight: 400;
         color: var(--text-color-secondary);
         }
+    .normalBtn {
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--text-solid-color);
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .from {
+        width: 720px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    
+    .from-headline {
+        font-size: 32px;
+        width: 400px;
+        font-weight: 550;
+        color: var(--text-color);
+    }
+    .from-p {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 32px;
+        color: var(--text-color-secondary);
+    }
+    .circles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
 
+    .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .circle:hover {
+      background-color: var(--primary-color);
+    }
     .cardList {
         margin-top: 20px;
         width: min-content;
@@ -198,13 +318,13 @@
 .benefits-container {
    margin-top: 40px;
    margin-bottom: 40px;
-   width: 480px;
+   width: 460px;
    display: flex;
    flex-direction: column;
    align-items: center;
    gap: 40px;
    position: relative;
-   padding-right: 40px;
+   padding-right: 20px;
 
  }
  
@@ -307,7 +427,6 @@
         flex-direction: row;
         gap: 20px;
         margin-top: 24px;
-        margin-bottom: 24px;
     }
 
     .primaryButton {
@@ -328,6 +447,65 @@
         background-color: transparent;
         border-radius: 30px;
         font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .telegramLink {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        border-radius: 20px;
+        background-color: var(--bg-color-secondary);
+        margin-top: 40px;
+        margin-bottom: 80px;
+        overflow: hidden;
+        padding: 24px 20px;
+    }
+
+    .telegramIntro {
+        width: 70%;
+    }
+
+    .tHeadline {
+        font-size: 18px;
+        font-weight: 550;
+        color: var(--text-color);
+    }
+
+    .tSubMobile {
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--text-color-secondary);
+        margin-bottom: 20px;
+    }
+
+    .tSub {
+        display: none;
+    }
+
+    .tgIcon {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+    }
+    .subHeading {
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--text-color-secondary);
+        }
+    .normalBtn {
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: var(--text-solid-color);
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
         font-weight: 500;
         cursor: pointer;
     }
@@ -416,5 +594,49 @@
     padding: 15px;
     border-radius: 22px;
 }
+
+.from {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        gap: 20px;
+        margin-bottom: 80px;
+    }
+    
+    .from-headline {
+        font-size: 28   px;
+        width: 100%;
+        font-weight: 550;
+        color: var(--text-color);
+    }
+    .from-p {
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 32px;
+        color: var(--text-color-secondary);
+    }
+    .circles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        display: none;
+    }
+
+    .circle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+
+    .circle:hover {
+      background-color: var(--primary-color);
+    }
     }
 </style>
