@@ -5,7 +5,7 @@
       <div class="sidebarHeader">
         <div class="trademark">
           <a href="/" class="trademark-area">
-            <img src="/digitallogo.svg" alt="logo" class="logo"/>
+            <img src="/images/newlogo.svg" alt="logo" class="logo"/>
             <p class="logo-title">digitaluzb</p>
           </a>
         </div>
@@ -60,7 +60,7 @@
   {#if screenWidth !==undefined && screenWidth > 768}
     <div class='logo'>
       <a href="/">
-        <img class="dlogo" src="/digitallogo.svg" alt="logo" />
+        <img class="dlogo" src="/images/newlogo.svg" alt="logo" />
         <p>digitaluzb</p>
       </a>
     </div>
@@ -282,7 +282,7 @@
     }
 
     .logo {
-      width:32px;
+      width:40px;
     }
 
     .trademark-area{
@@ -386,15 +386,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
   }
 
   .logo p {
+    margin-top: -2px;
     font-size: 16px;
   }
 
   .dlogo{
-    width: 28px;
+    width: 32px;
   }
 
     .searchBar {

@@ -1,10 +1,10 @@
 
 <div class='landingPage'>
     {#if mode == 'dark'}
-    <img class="landingImageDark" src="/images/landingDark.svg" alt="landing"/>
+    <img class="landingImageDark" src="/images/newlogo.svg" alt="landing"/>
     {/if}
     {#if mode == 'light'}
-    <img class="landingImageLight" src="/images/landingLight.svg" alt="landing"/>
+    <img class="landingImageLight" src="/images/newlogo.svg" alt="landing"/>
     {/if}
     <h1 class='intro'>O'zingizga o'zingiz ta'lim bering</h1>
     <p class='subHeading'>Sizning ta'limingiz - 100% sizning ma'suliyatingiz</p>
@@ -22,7 +22,6 @@
             <p class="tHeadline">Digitaluzb Community</p> 
             <p class="tSub">Boshqa o'rganuvchilar bilan suhbatlashing. Mavzular haqida samimiy fikringizni bildiring va ma'lumotlarni yaxshishga hissa qo'shing</p>
             <p class="tSubMobile">Boshqa o'rganuvchilar bilan suhbatlashing </p>
-
             <a href="https://t.me/digitaluzb_tg" target="_blank" class="normalBtn">Qo'shilish</a> <!-- Add link to telegram group -->
         </div>
         <img src="/images/tgIcon.svg" alt="telegram" class="tgIcon"/>
@@ -175,6 +174,10 @@
         margin-bottom: 20px;
     }
 
+    .tSubMobile {
+        display: none;
+    }
+
     .tgIcon {
         width: 160px;
         height: 160px;
@@ -248,13 +251,15 @@
     }
 
     .landingImageDark {
-        width: 300px;
-        height: 300px;
+        width: 180px;
+        height: 180px;
+        margin-top: 72px;
+        margin-bottom: 60px;
     }
 
     .landingImageLight {
-        width: 170px;
-        height: 170px;
+        width: 180px;
+        height: 180px;
         margin-top: 72px;
         margin-bottom: 60px;
     }
@@ -397,15 +402,15 @@
     }
 
     .landingImageLight {
-        width: 100%;
+        width: 160px;
     }
 
     .landingImageDark {
-        width:300px;
+        width:160px;
     }
 
     .intro {
-        margin-top: -48px;
+        margin-top: -10px;
         font-size: 28px;
         font-weight: 550;
         color: var(--text-color);
