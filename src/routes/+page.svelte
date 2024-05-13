@@ -74,9 +74,15 @@
     </div>
     <h1>Darslar</h1>
     <div class="cardList">
+       <a href="/kompyuter-asoslari/kompyuter-haqida">
         <VerticalCard image="/images/comp3.svg" title="Kompyuter Asoslari" description="Dasturlashni umuman bilmasangiz, kompyuterning hayotingizda faqat televizorda ko'rgan bo'lsangiz, IT - hayvon deb bilsangiz bu kurs aynan siz uchun"/>
-        <VerticalCard image="/images/web3.svg" title="Web Dasturlash Asoslari" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
+        </a>
+        <a href="/web-asoslari/internet">
+            <VerticalCard image="/images/web3.svg" title="Web Dasturlash Asoslari" description="Python boyicha ko'p kitob o'qigandan jinni bo'lyabsiz, agar o'zgina pulingiz bo'lsa Abdullajonni izlab Marsga raketa yasardingizmi? Unda bu kurs siz uchun"/>
+        </a>
+       <a href="/marketing-asoslari/marketing-nima">
         <VerticalCard image="/images/brand3.svg" title={`Yolg'onsiz Marketing`} description={`Bu darslik yana bitta ish topa olmagan "SMM"-shik tomonidan yaratilmagan. Infolottibozliksiz, botlar va yolg'on "SHOK" habarlasiz brendni rivojlantirish`}/>
+       </a>
     </div>
 
 </div>

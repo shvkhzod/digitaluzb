@@ -154,6 +154,13 @@
     .contentImage {
         border-radius: 20px;
     }
+    
+    :global(a) {
+        color: var(--text-color-secondary);
+        opacity: 1;
+        font-size: 16px;
+        font-weight: 400;
+    }
  }
 
  @media (max-width: 768px) {
