@@ -1,5 +1,5 @@
 <div class="about">
-    <h2>digitaluzb</h2>
+    <h2>Dinamik Ma'lumotlar Ombori</h2>
     <p>
         Digitaluzb - dasturlash, dizayn va marketing bilan 
         bog'liq keng qamrovli ma'lumotlar va manbalarni 

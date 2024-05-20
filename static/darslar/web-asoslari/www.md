@@ -15,6 +15,6 @@ HTTP - bu foydalanuvchi qurilmaasi(masalan brauzer) va server o'rtasidagi muloqo
 ### URL
 URL esa web sahifalarning manzilini ko'rsatadi.
 https://www.masalan.com URL shunday tuzilgan:
-* https://-protokol, ya'ni qoidalar to'plami
-* www.masalan.com - server manzili, ya'ni u yerda sahifa joylashgan
-* /page.html-sahifa fayli va nomi
++ https:/ - protokol,ya'ni qoidalar to'plami
++ www.masalan.com - server manzili, ya'ni u yerda sahifa joylashgan
++ /page.html - sahifa fayli va nomi

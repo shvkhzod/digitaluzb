@@ -155,12 +155,19 @@
         border-radius: 20px;
     }
     
-    :global(a) {
+    :global(li) {
         color: var(--text-color-secondary);
         opacity: 1;
         font-size: 16px;
         font-weight: 400;
+        
+      
     }
+
+    :global(a) {
+        color: var(--primary-color)
+    }
+
  }
 
  @media (max-width: 768px) {
