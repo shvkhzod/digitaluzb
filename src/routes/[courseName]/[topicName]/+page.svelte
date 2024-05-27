@@ -20,17 +20,19 @@
 	import { onMount } from 'svelte';
 	import { convertToRegular, extractSummary, replaceParagraphWithTip } from '$lib/utils';
     import {marked} from 'marked';
-    import  '../../../components/tip.js'
+    import  '../../../components/tip.js';
+    import Prism from '$lib/prism';
+    import hljs from 'highlight.js';
 
     export let data
     let screenWidth: number;
     let html = writable<string>('')
     let htmlSummary = writable<string>('')
+    
 
 
-
-    $: page.subscribe(({ params }) => {
-        fetchtTopicContent()
+    $: page.subscribe(async({ params }) => {
+        await fetchtTopicContent();
     });
     async function fetchtTopicContent() {
         console.log('url', data.courseName)
@@ -38,19 +40,24 @@
         const response = await fetch(`/darslar/${data.courseName}/${data.topicName}.md`);
         const markdown = await response.text();
         const compiled = marked(markdown);
+        
         const summaryExtracted = extractSummary(markdown)
             
         console.log('compiled')
         htmlSummary.set(await summaryExtracted)
-        html.set(await compiled)
+        html.set(await compiled);
+        
+        setTimeout(() => {
+            Prism.highlightAll();
+        }, 1);
 
   
     } catch (err) {
         console.error('Error during compilation:', err);
     }}
+    
     onMount(async()=> {
-        fetchtTopicContent()
-       
+         fetchtTopicContent();
     })
 
 </script>
@@ -59,7 +66,35 @@
  @media (min-width:768px) {
 
    
+    :global(pre[class*="language-"]) {
+      background-color: var(--secondary-color);
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 20px;
+
+    }
+
+    :global(:not(pre) > code[class*="language-"]) {
+      padding: 2px 4px;
+      border-radius: 4px;
     
+    }
+
+    :global(code[class*="language-"]),
+    :global(pre[class*="language-"]) {
+      color: var(--text-color);
+      text-shadow: none;
+    }
+    
+    :global(pre[class*="language-"] .token.tag),
+    :global(pre[class*="language-"] .token.selector),
+    :global(pre[class*="language-"] .token.attr-name) {
+    color: var(--primary-color);
+    }
+
+    :global(pre[class*="language-"] .token.attr-value) {
+    color: var(--attr-value-color, #ff7b00);
+    }
     .topicWrap {
         width: 100%;
         display: flex;
