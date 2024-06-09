@@ -207,6 +207,37 @@
 
  @media (max-width: 768px) {
     
+    :global(pre[class*="language-"]) {
+      background-color: var(--secondary-color);
+      padding: 20px;
+      border-radius: 20px;
+      margin-top: 20px;
+
+    }
+
+    :global(:not(pre) > code[class*="language-"]) {
+        
+      padding: 2px 4px;
+      border-radius: 4px;
+    
+    }
+
+    :global(code[class*="language-"]),
+    :global(pre[class*="language-"]) {
+      color: var(--text-color);
+      text-shadow: none;
+    }
+    
+    :global(pre[class*="language-"] .token.tag),
+    :global(pre[class*="language-"] .token.selector),
+    :global(pre[class*="language-"] .token.attr-name) {
+    color: var(--primary-color);
+    }
+
+    :global(pre[class*="language-"] .token.attr-value) {
+    color: var(--attr-value-color, #ff7b00);
+    }
+
     .topicWrap {
         width: 100%;
         display: flex;
