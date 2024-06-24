@@ -69,20 +69,29 @@ export function replaceTipTags(html:string) {
     return htmlContent;
 };
 
-export  async function extractSummary(markdown: string): Promise<string> {
+export  async function extractSummary(markdown: Promise<string> | string ): Promise<string> {
   // Create a temporary div element to parse the HTML
-  const tempDiv = document.createElement('div');
-  // Convert Markdown to HTML and assign it to the temporary div
-  tempDiv.innerHTML = await marked(markdown);
-  // Get all <h3> elements from the temporary div
-  const h3Elements = tempDiv.querySelectorAll('h3');
-  // Initialize an empty string to store the summary
-  let summary = '';
-  // Iterate over each <h3> element and append its outerHTML to the summary
-  h3Elements.forEach((element) => {
+  const html = marked( await markdown);
+
+  if (typeof window !== 'undefined') {
+    // Client-side execution
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = await html;
+    const h3Elements = tempDiv.querySelectorAll('h3');
+    let summary = '';
+    h3Elements.forEach((element) => {
       summary += element.outerHTML;
-  });
-  console.log(summary);
-  // Return the summary
-  return summary;
+    });
+    console.log(summary); 
+    return summary;
+  } else {
+    // Server-side execution
+    const h3Regex = /<h3[^>]*>(.*?)<\/h3>/g;
+    let match;
+    let summary = '';
+    while ((match = h3Regex.exec(await html)) !== null) {
+      summary += match[0];
+    }
+    return summary;
+  }
 }

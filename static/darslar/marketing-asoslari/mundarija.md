@@ -1,2 +1,4 @@
 Marketing Nima
-Brending
+Muhit
+Mijozlar Qarorlari
+Marketing Strategiyasi

@@ -1,77 +1,39 @@
-{#if $html !=='Error fetching file'}
-<div class='course'>
-   {#if screenWidth !== undefined && screenWidth > 768}
-   <div class="courseSideBars">
-    <div class="innerBar">
-        <p class="topicHeading">{convertToRegular(data.courseName)}</p>
-        {#each $html.split('\n') as line}
-        {#if line.trim().length !== 0} <!-- Check if the trimmed line is not empty -->
-          <a href={`/${data.courseName}/${convertToDashedWords(line)}`}>
-            <p class={convertToDashedWords(line) === $page.params.topicName ? 'selectedTopic' : ''}>
-              {line}
-            </p>
-          </a>
-        {/if}
-      {/each}
-      
- 
-    </div>
-     
- 
- </div>
-   {/if} 
-     <div class='courseContent'>
-        <slot/>
-     </div>
-</div>
+<script lang='ts'>
+    import { page } from '$app/stores';
+    import { convertToDashedWords, convertToRegular } from "$lib/utils";
 
-{:else}
-    <div class="course">
+    export let data;
+
+    let screenWidth: number;
+    $: ({ courseName, content } = data);
+</script>
+
+<svelte:window bind:innerWidth={screenWidth} />
+
+<div class='course'>
+    {#if screenWidth !== undefined && screenWidth > 768 && courseName && content}
         <div class="courseSideBars">
             <div class="innerBar">
-               <p>404</p>
+                <p class="topicHeading">{convertToRegular(courseName)}</p>
+                {#each content.split('\n') as line}
+                    {#if line.trim().length !== 0}
+                        <a href={`/${courseName}/${convertToDashedWords(line)}`}>
+                            <p class={convertToDashedWords(line) === $page.params.topicName ? 'selectedTopic' : ''}>
+                                {line}
+                            </p>
+                        </a>
+                    {/if}
+                {/each}
             </div>
+        </div>
+    {/if} 
+    <div class='courseContent'>
+        <slot/>
     </div>
-    </div>
-{/if}
+</div>
 
 
 
-<script lang='ts'>
-	import { onMount } from "svelte";
-    import { page } from '$app/stores';
-    import type {CourseType} from '../../data/courseTypes'
-    import {courses} from '../../data/courses'
-	import { writable } from "svelte/store";
-	import { convertToDashedWords, convertToRegular } from "$lib/utils";
-	import { marked } from "marked";
-    let screenWidth: number;
-    let course: CourseType | undefined;
-    export let data; 
-    const html = writable<string>('')
-    
-
-
-  
-  
-    onMount(async()=> {
-    console.log('data', data.courseName)
-    const filePath = `/darslar/${data.courseName}/mundarija.md`;
-     
-    try {
-      const response = await fetch(filePath);
-      const markdown = await response.text();
-
-      const compiled = await marked(markdown);
-      console.log(compiled)
-      html.set(markdown);
-    } catch (err) {
-      console.error(`Error fetching file ${filePath}:`, err);
-      html.set('Error fetching file');
-    }
-    })
-</script>
-<svelte:window bind:innerWidth={screenWidth} />
 <style>
 
    @media (max-width: 768px) {

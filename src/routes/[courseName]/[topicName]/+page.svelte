@@ -1,67 +1,46 @@
+<script lang='ts'>
+    import { onMount } from 'svelte';
+    import { convertToRegular, extractSummary } from '$lib/utils';
+    import { marked } from 'marked';
+    import '../../../components/tip.js';
+    import Prism from '$lib/prism';
+
+    export let data;
+
+    let screenWidth: number;
+    let html: Promise<string> | string ;
+    let htmlSummary: Promise<string> | string ;
+
+    $: html = marked(data.markdown);
+    $: extractSummary(marked(data.markdown)).then((summary) => {
+        htmlSummary = summary;
+    });
+
+
+    onMount(async() => {
+        setTimeout(() => {
+            Prism.highlightAll();
+        }, 1);
+    });
+</script>
+
 <layout>
     <div class="topicWrap">
         <div class='topicContainer'>
             <div class='crumbs'>
                 {convertToRegular(data.courseName)}
             </div>
-            {@html $html}
+            {@html html}
         </div>
         <div class="topicSummary">
-            {@html $htmlSummary}
+            {@html htmlSummary}
         </div>
-
-        
     </div>
 </layout>
 
-<script lang='ts'>
-    import { page } from '$app/stores';
-	import { writable } from 'svelte/store';
-	import { onMount } from 'svelte';
-	import { convertToRegular, extractSummary, replaceParagraphWithTip } from '$lib/utils';
-    import {marked} from 'marked';
-    import  '../../../components/tip.js';
-    import Prism from '$lib/prism';
-    import hljs from 'highlight.js';
-
-    export let data
-    let screenWidth: number;
-    let html = writable<string>('')
-    let htmlSummary = writable<string>('')
-    
-
-
-    $: page.subscribe(async({ params }) => {
-        await fetchtTopicContent();
-    });
-    async function fetchtTopicContent() {
-        console.log('url', data.courseName)
-        try {
-        const response = await fetch(`/darslar/${data.courseName}/${data.topicName}.md`);
-        const markdown = await response.text();
-        const compiled = marked(markdown);
-        
-        const summaryExtracted = extractSummary(markdown)
-            
-        console.log('compiled')
-        htmlSummary.set(await summaryExtracted)
-        html.set(await compiled);
-        
-        setTimeout(() => {
-            Prism.highlightAll();
-        }, 1);
-
-  
-    } catch (err) {
-        console.error('Error during compilation:', err);
-    }}
-    
-    onMount(async()=> {
-         fetchtTopicContent();
-    })
-
-</script>
 <svelte:window bind:innerWidth={screenWidth} />
+
+
 <style>
  @media (min-width:768px) {
 
