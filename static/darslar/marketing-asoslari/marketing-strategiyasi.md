@@ -6,10 +6,10 @@ Bozor segmentatsiyasi - bu katta bozorni o'xshash ehtiyojlar, xususiyatlar yoki 
 \
 \
 Segmentatsiya mezonlari:
-* Demografik: yosh, jins, oilaviy holat, daromad, ta'lim darajasi
-* Geografik: mamlakat, shahar, iqlim, aholi zichligi
-* Psixografik: hayot tarzi, qadriyatlar, shaxsiyat
-* Xulq-atvor: foydalanish darajasi, foyda izlash, brendga sodiqlik
+* **Demografik**: yosh, jins, oilaviy holat, daromad, ta'lim darajasi
+* **Geografik**: mamlakat, shahar, iqlim, aholi zichligi
+* **Psixografik**: hayot tarzi, qadriyatlar, shaxsiyat
+* **Xulq-atvor**: foydalanish darajasi, foyda izlash, brendga sodiqlik
 \
 \
 Misol: Smartfon ishlab chiqaruvchi kompaniya o'z bozorini "texnologiyaga qiziquvchi yoshlar", "biznes foydalanuvchilar" va "katta yoshli oddiy foydalanuvchilar" kabi segmentlarga bo'lishi mumkin
@@ -46,21 +46,21 @@ Misol: Apple kompaniyasi, innovatsiya va dizaynni qadriyat sifatida tanlab, o'zi
 Marketing strategiyasi statik emas, balki dinamik jarayon bo'lishi kerak. Bozor sharoitlari, iste'molchi talablari va texnologiyalar doimiy ravishda o'zgarib turadi. Shu sababli, kompaniyalar o'z marketing strategiyalarini muntazam ravishda qayta ko'rib chiqishlari va yangilashlari zarur. Ko'pgina ekspertlar marketing strategiyasini har 5-7 yilda to'liq qayta ko'rib chiqishni tavsiya etadilar.
 \
 \
-Strategiyani yangilash zaruriyatining sabablari:\
--Yangi raqobatchilarning paydo bo'lishi.\
--Iste'molchilar didining o'zgarishi\
--Iqtisodiy sharoitlarning o'zgarishi.\
--Yangi mahsulotlar, xizmatlar yoki bozorlarning paydo bo'lishi.
+Strategiyani yangilash zaruriyatining sabablari:
+- Yangi raqobatchilarning paydo bo'lishi.
+- Iste'molchilar didining o'zgarishi
+- Iqtisodiy sharoitlarning o'zgarishi.
+- Yangi mahsulotlar, xizmatlar yoki bozorlarning paydo bo'lishi.
 \
 \
 Marketing strategiyasini yangilash jarayoni:
-1. Joriy holatni baholash: Mavjud strategiyaning kuchli va zaif tomonlarini tahlil qilish.
-2. Bozor tendentsiyalarini o'rganish: Yangi imkoniyatlar va tahdidlarni aniqlash.
-3. Maqsadli auditoriyani qayta ko'rib chiqish: Iste'molchilar ehtiyojlari va xatti-harakatlarining o'zgarishini tahlil qilish.
-4.Raqobatchilar tahlili: Raqobatchilar strategiyasidagi o'zgarishlarni kuzatish.
-5.Yangi maqsad va vazifalarni belgilash: Kompaniyaning uzoq muddatli maqsadlariga muvofiq yangi marketing maqsadlarini ishlab chiqish.
-6. Yangi strategiyani ishlab chiqish: Segmentatsiya, maqsadli bozorni tanlash va pozitsiyalash strategiyalarini yangilash.
-7. Amalga oshirish rejasini tuzish: Yangi strategiyani hayotga tatbiq etish uchun aniq harakatlar rejasini ishlab chiqish.
+1. **Joriy holatni baholash**: Mavjud strategiyaning kuchli va zaif tomonlarini tahlil qilish.
+2. **Bozor tendentsiyalarini o'rganish**: Yangi imkoniyatlar va tahdidlarni aniqlash.
+3. **Maqsadli auditoriyani qayta ko'rib chiqish**: Iste'molchilar ehtiyojlari va xatti-harakatlarining o'zgarishini tahlil qilish.
+4. **Raqobatchilar tahlili**: Raqobatchilar strategiyasidagi o'zgarishlarni kuzatish.
+5. **Yangi maqsad va vazifalarni belgilash**: Kompaniyaning uzoq muddatli maqsadlariga muvofiq yangi marketing maqsadlarini ishlab chiqish.
+6. **Yangi strategiyani ishlab chiqish**: Segmentatsiya, maqsadli bozorni tanlash va pozitsiyalash strategiyalarini yangilash.
+7. **Amalga oshirish rejasini tuzish**: Yangi strategiyani hayotga tatbiq etish uchun aniq harakatlar rejasini ishlab chiqish.
 \
 \
 Marketing strategiyasini muntazam ravishda yangilab turish kompaniyalarga bozordagi o'zgarishlarga moslashish, raqobatbardoshlikni saqlab qolish va uzoq muddatli muvaffaqiyatga erishish imkonini beradi.

@@ -178,6 +178,30 @@
       
     }
 
+    :global(ul) {
+        margin-top: 8px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+        
+    }
+
+    :global(strong) {
+        opacity: 1;
+        color:var(--text-color);
+    }
+
+    :global(ol) {
+        margin-top: 8px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px
+        
+    }
+
+
     :global(a) {
         color: var(--primary-color)
     }
