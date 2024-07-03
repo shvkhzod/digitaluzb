@@ -1,4 +1,4 @@
-# Iste'molvhilarning Qarorlari
+# Iste'molchilarning Qarorlari
 Xarid qarorlarini qabul qilish jarayoni murakkab va ko'p qirrali bo'lib, marketologlar uchun muhim ahamiyatga ega. Quyida ushbu jarayonning takomillashtirilgan bosqichlarini ko'rib chiqamiz.
 
 ### Ehtiyojlarni anglash va eslatish

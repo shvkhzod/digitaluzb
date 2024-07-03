@@ -52,6 +52,4 @@ Kompaniyaning ichki va tashqi muhitini baholashda foydali bo'lishi mumkin. S(Str
 Ushbu SWOT tahlilidan foydalanib, kompaniya o'z kuchli tomonlarini yanada rivojlantirish va zaif tomonlarini bartaraf etish uchun strategiyalarni ishlab chiqishi mumkin
 \
 \
-Marketing muhiti doimiy ravishda o'zgarib turadi, shuning uchun uni muntazam ravishda kuzatib borish va tahlil qilish kerak. Bozordagi o'zgarishlar, yangi tendentsiyalar va texnologik yutuqlarni kuzatish orqali kompaniyalar o'z marketing strategiyalarini moslashtirishlari va raqobatbardosh bo'lib qolishlari mumkin.
-
 Marketing muhitini chuqur tushunish va tahlil qilish orqali kompaniyalar mijozlarga yo'naltirilgan marketing strategiyalarini ishlab chiqishlari, o'zraqobatbardosh mavqeini mustahkamlashlari va uzoq muddatli muvaffaqiyatga erishlari mumkin.

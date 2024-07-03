@@ -1,6 +1,6 @@
 # Marketing Nima
 
-Marketing dunyosi doimiy ravishda o'zgarib turadi, lekin uning mohiyati o'zgarmaydi. Marketing - bu mijozlar ehtiyojlarini qondirish va biznes muvaffaqiyatiga erishish uchun qilingan sa'y-harakatlardir. Keling, marketingning qiziqarli tarixiga nazar solaylik va kelajakda bizni nima kutayotganini bilib olaylik!
+Marketing dunyosi doimiy ravishda o'zgarib turadi, lekin uning mohiyati o'zgarmaydi. Marketing - bu mijozlarga mahsulot yoki xizmatlar haqida ma'lumot berish va ularni raqobatchilarnikidan ko'ra yaxshiroq qiymatga ega ekaniga ishontirish san'atidir.. Keling, marketingning qiziqarli tarixiga nazar solaylik va kelajakda bizni nima kutayotganini bilib olaylik!
 
 ![markeingIntersection](/images/marketing1.webp)
 Boshqa so'z bilan aytganda Marketing bu Iqtisodiyot va Psixologiya aralashmasi desa ham bo'ladi
