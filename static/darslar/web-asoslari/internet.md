@@ -12,7 +12,8 @@ Demak, men o'zimni kompyuterimni do'stimni kompyuteriga ulab undaki narsalarni k
 Internet esa tarmoqlar tarmoqidir, ya'ni millionlab kompyuterlar bir biriga ulangan tarmoq. Bu kompyuterlaruning ba'zilari server, ba'zilari esa oddiy foydanalnuvchi kompyuterlar. Serverlar juda kuchli kompyuterlar bo'lib, ular Internetning asosiy qismini tashkil qiladi. Oddiy foydalanuvchi kompyuterlari esa sizning uyingizdagi yoki ofisidagi kompyuterlar.
 ![foundation](/images/web02.webp)
 ### Server va Ma'lumotlar markazlari
-Serverlar ham kompyuter, lekin ular siznikidan farq qiladi. Ular Internetda 24/7 onlayn, ya'ni hech qachon o'chmaydi va doimo ishlaydi. Serverlar ko'pincha maxsus binolarda - ma'lumotlar markazlarida joylashadi. Agar serverlar bo'lmaganda, siz hozir bu qo'llanmani o'qiy olmasdingiz.
+Serverlar ham kompyuter, lekin ular siznikidan farq qiladi. Ular Internetda 24/7 onlayn, ya'ni hech qachon o'chmaydi va doimo ishlaydi. Serverlar ko'pincha maxsus binolarda - ma'lumotlar markazlarida joylashadi. Ularning vazifalari brauzerlardan kelgan so'rovlarni kutish. Bu so'rovlar veb-sahifalar, rasmlar, ovozlar yoki videolar uchun bo'lishi mumkin. Server so'ralgan ma'lumotni topib, uni brauzerga qaytaradi.
+![foundation](/images/web025.webp)
 ### Optik Tolalar
 Yana bir savol - agar ikkita kompyuter bir xonada bo'lsa, ularni maxsus kabel bilan ulash mumkin. Ammo, AQSHdagi kompyuterni O'zbekistondagi kompyuter bilan qanday bog'lash mumkin? Buning javobi - optik tolalar!
 \
