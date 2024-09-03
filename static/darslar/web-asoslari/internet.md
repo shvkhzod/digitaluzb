@@ -1,8 +1,11 @@
 # Internet
-Bugungi kunda deyarli hamma internetdan foydalanadi, lekin juda kam odam bu nima ekanligini tushunadi, shuning uchun bugun bir necha daqiqa ichida siz o'sha daholar guruhiga qo'shilishingiz mumkin (hazil, unchalik daho bo'lmasa ham, yaxshi guruh)
+Bugungi kunda deyarli hamma internetdan foydalanadi, lekin juda kam odam bu nima ekanligini tushunadi.Hozir aynan shu matni qanday o'qiyotganingizni hech o'ylab ko'rganmisiz? Unda Internet haqida o'rganamiz - bularni tushunish uchun kompyuter fanlari boyicha diplom kerak emas
 
 ### Dinazavrlar davri
-Siz do'stingini kompyuteriga Counter Strike 1.6 o'yinini o'tkazib bermoqchisiz. Eng oson yoli bu, fleshkadan foydalanish. Ammo, 1960-70 yillarda fleshkalar mavjud emas edi! Shu sababli, olimlar kompyuterlarni bir-biriga ulashning turli usullarini o'ylab topishga majbur bo'lishgan. Agar ular bu ishni qilishmasa edi, siz hozir Counter Strike 1.6 o'yinni o'ynay olmasdingiz. Tasavvur qiling-a!
+Tasavvur qiling: 1960-yillar. Siz o'zingizning yangi disco playlistingizni do'stingiz bilan baham ko'rmoqchisiz. Lekin to'xtang! USB yo'q, Bluetooth yo'q, hatto floppi disk ham yo'q.
+\
+\
+Bizning texnologiyaga usta ajdodlarimiz (ya'ni, juda katta ko'zoynak taqqan olimlar) ijodkor bo'lishga majbur edilar.
 
 ![foundation](/images/web01.webp)
 \

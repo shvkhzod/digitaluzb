@@ -1,9 +1,27 @@
 # HTML: Hypertext Markup Language
 HTML - Hypermatn Belgilash Tili - Webning ona tili, WWWda hamma web-sahifa HTML orqali yaratilgan, 100%. HTML web-sahifadagi kontentni va uni strukturasini belgilaydi.
 
+### Tuzilish
+Har bir dokumentda tuzulish bor(struktura), kitoblar, elektron hujjatlar yoki gazetarada ham. 
+Masalan Gazetalar
+![newspaper](/images/gazeta.webp)
+Har bir maqolada sarlavha, matn va ba'zan rasmlar bo'ladi. Agar maqola uzun bo'lsa, uni alohida bo'limlarga ajratuvchi kichik sarlavhalar yoki voqea ishtirokchilarining iqtiboslari ham bo'lishi mumkin. 
+\
+\
+Bunday tuzilish o'quvchilarga gazetadagi hikoyalarni tushunishga yordam beradi. 
+
+
 ### HTML
-Veb-sahifangizdagi HTML kodi brauzerga sahifani qanday ko'rsatish kerakligini aniq ko'rsatma beradi. Bu xuddi sahifangizning chizmasi yoki rejasi kabidir. Agar siz HTML kodingizni to'g'ri va puxta yozsangiz, sahifangiz nafaqat kompyuterlarda, balki turli qurilmalarda ham yaxshi ishlaydi.
+HTML Web Sahifaning tuzilishini yaratadi. Bu xuddi sahifangizning chizmasi yoki rejasi kabidir. Agar siz HTML kodingizni to'g'ri va puxta yozsangiz, sahifangiz nafaqat kompyuterlarda, balki turli qurilmalarda ham yaxshi ishlaydi.
 ![html](/images/html1.webp)
+
+### Elementlar 
+HTML web sahifani strukturasini yaratish uchun elementlardan foydalanadi.
+Har bir element o'ziga hos teg mavjud. 
+
+### Teglar
+Teglarni konteyner yo quti deb tasavvur qilish mumkin
+![html](/images/html8.webp)
 
 
 ### Lazzat restorani
@@ -45,6 +63,7 @@ Agar saqlagan faylingiz ochsangiz, shunaqa natija paydo bo'ladi:
 ![notepad](/images/html7.webp)
 \
 \
+![notepad](/images/gazeta.webp)
 Biz hohlagandek natija emas, chunki biz brauzer uchun web sahifani qanday tuzilganini aytmadik, ya'ni qaysi element sarlavha va qaysi element paragraf ekanligni yo'zmadik. Va shu narsani biz HTML yordamida qilamiz
 ```html
 <!DOCTYPE html>

@@ -87,12 +87,14 @@
     }
     .topicContainer :global(h1) {
         color: var(--text-color);
-        font-size: 28px;
+        font-size: 32px;
         margin-bottom: 8px;
     }
 
     .topicContainer :global(h3) {
         margin-top: 40px;
+        font-size: 22px;
+        font-weight: 550;
         color: var(--text-color);
     }
 
@@ -105,7 +107,10 @@
     }
 
     .topicContainer :global(p) {
-        color: var(--text-color-secondary)
+        color: var(--text-color-secondary);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
     }
 
     .topicContainer :global(img) {

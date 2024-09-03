@@ -7,6 +7,9 @@ Ko'p odam kompyuterning ichki tarafini tushunish qiyin deb o'ylaydi. Lekin bu un
 ### Motherboard
 Motherboard kompyuterning eng asosiy elektron platasidir. Bu protsessorni, xotirani, qattiq disk va optik disklar uchun ulagichlarni, video va audioni boshqarish uchun kengaytirish kartalarini va kompyuteringiz portlariga (masalan, USB portlari) ulanishlarni saqlaydigan yupqa plastinka. Motherboard kompyuterning har bir qismiga bevosita yoki bilvosita ulanadi.
 
+### Kompyuterning asosiy komponentlari
+![foundation2](/images/watercolor.webp)
+
 ### CPU
 Protsessor yoki CPU, motherboard korpusi ichida joylashgan. Uni ba'zan kompyuterning miyasi deb atashadi va uning vazifasi buyruqlarni bajarishdir. Tugmachani bosganingizda, sichqonchani bosganingizda yoki dasturni ishga tushirganingizda, siz protsessorga ko'rsatmalar yuborasiz.
 
